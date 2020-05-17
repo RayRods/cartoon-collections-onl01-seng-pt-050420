@@ -1,4 +1,3 @@
-require 'pry'
 dwarve_names = []
 long_calls = []
 
@@ -9,10 +8,9 @@ def roll_call_dwarves(dwarves_names)
 end
 
 def summon_captain_planet(planeteer_calls)
-    planeteer_calls.capitalize
-    binding.pry
+   planeteer_calls.collect {|calls| calls.capitalize + "!"}
   end
-  planeteer_calls
+
 end
 
 def long_planeteer_calls(long_calls)
